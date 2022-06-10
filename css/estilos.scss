@@ -1,0 +1,179 @@
+:root{
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+  }
+
+  html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--dark-cyan);
+    // background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+    background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    background-color: white;
+    width: 326px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
+    &-header{
+        width: 100%;
+        display: block;
+    }
+    &-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid rgba(235, 228, 228, 0.486);
+        
+
+        &-img{
+            border: 5px solid white;
+            border-radius: 50%;
+            margin-top: calc(-48px - 5px);
+            background-color: white;
+        }
+        
+
+        &-title{
+            font-size: 1.8rem;
+            margin-top: 2rem;
+
+            span{
+                color: darkgray;
+                font-weight: 400;
+                text-align: center;
+                
+            }
+        }
+        &-text{
+            color: var(--dark-gray);
+            font-size: 1.6rem;
+            margin-bottom: 2rem;
+            margin-top: 0;
+        }
+    }
+  
+
+    &-footer{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    
+        &-social{
+            text-align: center;
+
+            p{
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
+// --------------------------CV------------------------
+.flexCV{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 200px;
+}
+
+.cardCV{
+    background-color: white;
+    width:550px;
+    height: 700px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    &-left{
+        width: 40rem;
+        background-color: rgba(59, 97, 153, 0.952);
+        color: white;
+        height: 100%;
+        padding-top: 2rem;
+        padding-left: 3rem;
+
+        &-inicio{
+            &-img{
+                height: 100px;
+                border: 5px solid white;
+                border-radius: 50%;
+                background-color: white;
+                display: flex;
+                align-items: center;
+                align-content: center;
+            }
+        }
+        &-skills{
+            text-align: left;
+        }
+        
+
+        &-title{
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            text-align: left;
+            span{
+                color: rgb(255, 255, 255);
+                font-weight: 400;
+            }
+        }
+        &-datos{
+            align-items: left;
+            text-align: left;
+        }
+    }
+    &-right{
+        width: 80rem;
+        height: 100%;
+        background-color: rgb(246, 245, 250);
+        text-align: left;
+        padding-left: 2rem;
+        padding-top: 2rem;
+        padding-right: 2rem;
+        
+        a{
+            font-size: 2rem;
+        }
+       &-estudios{
+
+        &-right{
+            display: flex;
+            flex-direction: column;
+            // align-items: right;
+            align-content: flex-end;
+        }
+           a{
+               font-size:1.2rem ;
+           }
+       }
+    }
+}
+
+.svg{
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+}
