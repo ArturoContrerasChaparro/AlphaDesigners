@@ -1,2 +1,0 @@
-# AlphaDesigners
-practica 
